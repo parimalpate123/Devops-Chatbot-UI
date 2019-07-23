@@ -1,0 +1,628 @@
+{
+  "rasa_nlu_data": {
+    "common_examples": [
+      {
+        "intent": "greet",
+        "text": "hello"
+      },
+      {
+        "intent": "greet",
+        "text": "hi"
+      },
+      {
+        "intent": "bye",
+        "text": "bye"
+      },
+      {
+        "intent": "bye",
+        "text": "Goodbye"
+      },
+      {
+        "intent": "bye",
+        "text": "See you later"
+      },
+      {
+        "intent": "greet",
+        "text": "Hello"
+      },
+      {
+        "intent": "check_service",
+        "text": "check service"
+      },
+      {
+        "intent": "check_service",
+        "text": "check for a service"
+      },
+      {
+        "intent": "check_service",
+        "entities": [
+          {
+            "start": 14,
+            "end": 20,
+            "value": "google",
+            "entity": "servicename"
+          }
+        ],
+        "text": "check service google"
+      },
+      {
+        "intent": "check_service",
+        "entities": [
+          {
+            "start": 14,
+            "end": 19,
+            "value": "yahoo",
+            "entity": "servicename"
+          }
+        ],
+        "text": "check service yahoo"
+      },
+      {
+        "intent": "check_service",
+        "entities": [
+          {
+            "start": 14,
+            "end": 18,
+            "value": "cnbc",
+            "entity": "servicename"
+          }
+        ],
+        "text": "check service cnbc"
+      },
+      {
+        "intent": "check_service",
+        "entities": [
+          {
+            "start": 14,
+            "end": 23,
+            "value": "travelers",
+            "entity": "servicename"
+          }
+        ],
+        "text": "check service travelers"
+      },
+      {
+        "intent": "check_service",
+        "entities": [
+          {
+            "start": 14,
+            "end": 23,
+            "value": "accenture",
+            "entity": "servicename"
+          }
+        ],
+        "text": "check service accenture"
+      },
+      {
+        "intent": "check_JIRA_Status",
+        "entities": [
+          {
+            "start": 25,
+            "end": 29,
+            "value": "TS-3",
+            "entity": "JIRAID"
+          }
+        ],
+        "text": "check request status for TS-3"
+      },
+      {
+        "intent": "check_JIRA_Status",
+        "entities": [
+          {
+            "start": 25,
+            "end": 29,
+            "value": "TS-6",
+            "entity": "JIRAID"
+          }
+        ],
+        "text": "check request status for TS-6"
+      },
+      {
+        "intent": "check_JIRA_Status",
+        "entities": [
+          {
+            "start": 25,
+            "end": 29,
+            "value": "TS-7",
+            "entity": "JIRAID"
+          }
+        ],
+        "text": "check request status for TS-7"
+      },
+      {
+        "intent": "check_JIRA_Status",
+        "entities": [
+          {
+            "start": 25,
+            "end": 30,
+            "value": "TS-7",
+            "entity": "JIRAID"
+          }
+        ],
+        "text": "check request status for TS-20"
+      },
+      {
+        "intent": "trigger_jenkinsjob",
+        "text": "trigger jenkins job"
+      },
+      {
+        "intent": "trigger_jenkinsjob",
+        "text": "start jenkins job"
+      },
+      {
+        "intent": "trigger_jenkinsjob",
+        "text": "build jenkins job"
+      },
+      {
+        "intent": "trigger_jenkinsjob",
+        "entities": [
+          {
+            "start": 25,
+            "end": 38,
+            "value": "sampleapp_ppl",
+            "entity": "jenkinsjob"
+          }
+        ],
+        "text": "trigger pipeline job for sampleapp_ppl"
+      },
+      {
+        "intent": "trigger_jenkinsjob",
+        "text": "trigger pipeline"
+      },
+      {
+        "intent": "trigger_jenkinsjob",
+        "entities": [
+          {
+            "start": 17,
+            "end": 30,
+            "value": "sampleapp_ppl",
+            "entity": "jenkinsjob"
+          }
+        ],
+        "text": "trigger pipeline sampleapp_ppl"
+      },
+      {
+        "intent": "trigger_jenkinsjob",
+        "entities": [
+          {
+            "start": 18,
+            "end": 31,
+            "value": "sampleapp_ppl",
+            "entity": "jenkinsjob"
+          }
+        ],
+        "text": "start jenkins for sampleapp_ppl"
+      },
+      {
+        "intent": "trigger_jenkinsjob",
+        "entities": [
+          {
+            "start": 22,
+            "end": 35,
+            "value": "sampleapp_ppl",
+            "entity": "jenkinsjob"
+          }
+        ],
+        "text": "build jenkins job for sampleapp_ppl"
+      },
+      {
+        "intent": "trigger_jenkinsjob",
+        "entities": [
+          {
+            "start": 20,
+            "end": 33,
+            "value": "sampleapp_ppl",
+            "entity": "jenkinsjob"
+          }
+        ],
+        "text": "trigger jenkins for sampleapp_ppl"
+      },
+      {
+        "intent": "trigger_deploy",
+        "text": "trigger deployment"
+      },
+      {
+        "intent": "trigger_deploy",
+        "entities": [
+          {
+            "start": 19,
+            "end": 29,
+            "value": "deploytest",
+            "entity": "appname"
+          }
+        ],
+        "text": "trigger deploy for deploytest"
+      },
+      {
+        "intent": "trigger_deploy",
+        "entities": [
+          {
+            "start": 15,
+            "end": 25,
+            "value": "deploytest",
+            "entity": "appname"
+          },
+          {
+            "start": 29,
+            "end": 32,
+            "value": "uat",
+            "entity": "environment"
+          }
+        ],
+        "text": "trigger deploy deploytest in uat"
+      },
+      {
+        "intent": "trigger_deploy",
+        "entities": [
+          {
+            "start": 17,
+            "end": 27,
+            "value": "deploytest",
+            "entity": "appname"
+          },
+          {
+            "start": 31,
+            "end": 34,
+            "value": "uat",
+            "entity": "environment"
+          }
+        ],
+        "text": "start deploy for deploytest in uat"
+      },
+      {
+        "intent": "trigger_deploy",
+        "entities": [
+          {
+            "start": 17,
+            "end": 27,
+            "value": "deploytest",
+            "entity": "appname"
+          },
+          {
+            "start": 31,
+            "end": 35,
+            "value": "prod",
+            "entity": "environment"
+          }
+        ],
+        "text": "start deploy for deploytest in prod"
+      },
+      {
+        "intent": "trigger_deploy",
+        "entities": [
+          {
+            "start": 15,
+            "end": 25,
+            "value": "deploytest",
+            "entity": "appname"
+          }
+        ],
+        "text": "trigger deploy deploytest"
+      },
+      {
+        "intent": "trigger_deploy",
+        "entities": [
+          {
+            "start": 23,
+            "end": 32,
+            "value": "sampleapp",
+            "entity": "appname"
+          }
+        ],
+        "text": "trigger deployment for sampleapp"
+      },
+      {
+        "intent": "trigger_deploy",
+        "entities": [
+          {
+            "start": 19,
+            "end": 28,
+            "value": "sampleapp",
+            "entity": "appname"
+          },
+          {
+            "start": 32,
+            "end": 35,
+            "value": "uat",
+            "entity": "environment"
+          }
+        ],
+        "text": "trigger deployment sampleapp in uat"
+      },
+      {
+        "intent": "trigger_deploy",
+        "entities": [
+          {
+            "start": 21,
+            "end": 30,
+            "value": "sampleapp",
+            "entity": "appname"
+          },
+          {
+            "start": 34,
+            "end": 37,
+            "value": "uat",
+            "entity": "environment"
+          }
+        ],
+        "text": "start deployment for sampleapp in uat"
+      },
+      {
+        "intent": "trigger_deploy",
+        "entities": [
+          {
+            "start": 21,
+            "end": 30,
+            "value": "sampleapp",
+            "entity": "appname"
+          },
+          {
+            "start": 34,
+            "end": 38,
+            "value": "prod",
+            "entity": "environment"
+          }
+        ],
+        "text": "start deployment for sampleapp in prod"
+      },
+      {
+        "intent": "trigger_deploy",
+        "entities": [
+          {
+            "start": 19,
+            "end": 28,
+            "value": "sampleapp",
+            "entity": "appname"
+          }
+        ],
+        "text": "trigger deployment sampleapp"
+      },
+      {
+        "intent": "create_JIRA_request",
+        "text": "create a new issue"
+      },
+      {
+        "intent": "create_JIRA_request",
+        "text": "creation of an issue"
+      },
+      {
+        "intent": "check_JIRA_Status",
+        "text": "check JIRA status"
+      },
+      {
+        "intent": "check_JIRA_Status",
+        "text": "check status JIRA"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 0,
+            "end": 10,
+            "value": "deploytest",
+            "entity": "appname"
+          }
+        ],
+        "text": "deploytest"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 0,
+            "end": 9,
+            "value": "sampleapp",
+            "entity": "appname"
+          }
+        ],
+        "text": "sampleapp"
+      },
+      {
+        "intent": "env_inform",
+        "entities": [
+          {
+            "start": 0,
+            "end": 3,
+            "value": "int",
+            "entity": "environment"
+          }
+        ],
+        "text": "int"
+      },
+      {
+        "intent": "env_inform",
+        "entities": [
+          {
+            "start": 0,
+            "end": 3,
+            "value": "uat",
+            "entity": "environment"
+          }
+        ],
+        "text": "uat"
+      },
+      {
+        "intent": "env_inform",
+        "entities": [
+          {
+            "start": 0,
+            "end": 3,
+            "value": "dev",
+            "entity": "environment"
+          }
+        ],
+        "text": "dev"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 0,
+            "end": 6,
+            "value": "google",
+            "entity": "servicename"
+          }
+        ],
+        "text": "google"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 0,
+            "end": 4,
+            "value": "TS-3",
+            "entity": "JIRAID"
+          }
+        ],
+        "text": "TS-3"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 0,
+            "end": 4,
+            "value": "TS-4",
+            "entity": "JIRAID"
+          }
+        ],
+        "text": "TS-4"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 0,
+            "end": 4,
+            "value": "TS-5",
+            "entity": "JIRAID"
+          }
+        ],
+        "text": "TS-5"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 0,
+            "end": 7,
+            "value": "summary",
+            "entity": "summary"
+          }
+        ],
+        "text": "summary"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 0,
+            "end": 4,
+            "value": "test",
+            "entity": "description"
+          }
+        ],
+        "text": "test"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 0,
+            "end": 15,
+            "value": "summary example",
+            "entity": "summary"
+          }
+        ],
+        "text": "summary example"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 0,
+            "end": 19,
+            "value": "description example",
+            "entity": "description"
+          }
+        ],
+        "text": "description example"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 0,
+            "end": 23,
+            "value": "application not working",
+            "entity": "summary"
+          }
+        ],
+        "text": "application not working"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 0,
+            "end": 32,
+            "value": "page not found for sampleapp.com",
+            "entity": "description"
+          }
+        ],
+        "text": "page not found for sampleapp.com"
+      },
+      {
+        "intent": "ask_access",
+        "entities": [
+          {
+            "start": 21,
+            "end": 27,
+            "value": "github",
+            "entity": "access"
+          }
+        ],
+        "text": "provide me access to github"
+      },
+      {
+        "intent": "ask_access",
+        "entities": [
+          {
+            "start": 21,
+            "end": 24,
+            "value": "svn",
+            "entity": "access"
+          }
+        ],
+        "text": "provide me access to svn"
+      },
+      {
+        "intent": "ask_access",
+        "entities": [
+          {
+            "start": 21,
+            "end": 24,
+            "value": "ucd",
+            "entity": "access"
+          }
+        ],
+        "text": "provide me access to ucd"
+      },
+      {
+        "intent": "ask_access",
+        "entities": [
+          {
+            "start": 21,
+            "end": 32,
+            "value": "servicedesk",
+            "entity": "access"
+          }
+        ],
+        "text": "provide me access to servicedesk"
+      }
+    ],
+    "regex_features": [],
+    "entity_synonyms": []
+  }
+}
